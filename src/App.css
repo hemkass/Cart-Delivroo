@@ -1,38 +1,174 @@
-.App {
+.restaurant {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  column-gap: 100px;
+}
+
+.bloc2 img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #2e3333;
+  font-size: 40px;
+  line-height: 42px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #2e3333;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #454d4d;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+p {
+  color: #858b8b;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  padding: 100px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  column-gap: 100px;
+  margin-bottom: 30px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 50px;
+}
+
+.section img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.section-block {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.meal-box {
+  width: 350px;
+  display: flex;
+  gap: 10px;
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  color: #808484;
+  line-height: 1.3rem;
+  height: 2.6 rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 1 rem;
+  height: 40px;
+  font-weight: 400;
+}
+
+.price {
+  color: #808484;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  font-weight: 800;
+}
+.popular {
+  color: #ff8000;
+  margin-right: 10px;
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.emptyCart {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart-box {
   display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.cart-box span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.count {
+  width: 80px;
+}
+
+.paymentBox {
+  padding: 20px 0px 20px 0px;
   flex-direction: column;
-  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px grey;
+  margin-top: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 50px;
+  width: 90%;
+  background-color: white;
+  align-self: center;
+}
+
+.payment-button {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-button button {
   color: white;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #00cdbc;
+  padding: 10px 20px 10px 20px;
+  width: 70%;
+  border-radius: 5px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment-button :hover {
+  color: #00cdbc;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 20px 10px 20px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #00cdbc;
 }
